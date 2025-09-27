@@ -1,0 +1,50 @@
+        body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding:0;
+        background: url(https://pixahive.com/wp-content/uploads/2021/04/spider-and-spiders-web-431246-pixahive.jpg);
+        
+    }
+
+        header {
+        
+            color: rgb(215, 190, 190);
+            padding: 20px;
+            text-align: center;}
+        main {
+            width: 75%;
+            margin: 20px auto;
+            background: hsl(179, 79%, 50%);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(190, 160, 160, 0.1);}
+        article {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #0b0a0a;}
+        h1, h2 {
+            color: #222; }
+        ul, ol {
+            padding-left: 20px;}
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #e4e9ec;
+            color: white; }
+        a {
+            color: #0066cc; }
+
+        p { color:rgb(29, 27, 27);
+        font-size: 16px}
+
+        #special-heading {
+            color: darkred;
+            text-decoration: underline
+        }
+
+        #main-header h1 {
+            background-color: rgb(54, 196, 196);
+            border-radius: 8px;
+
+        font-size: 35px;
+        }
