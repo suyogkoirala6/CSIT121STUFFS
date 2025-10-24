@@ -1,0 +1,118 @@
+ body {
+        font-family: "poppins", Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;;
+        background: url(https://pixahive.com/wp-content/uploads/2021/04/spider-and-spiders-web-431246-pixahive.jpg);
+        background-size: cover;
+        color: #222;
+    }
+
+    header {
+        text-align: center;
+        padding: 25px 10px;
+        background: rgba(0,0,0,0.6);
+        color: darkred;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        
+    }
+        
+#main-header h1 {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 15px 25px;
+    border-radius: 12px;
+    display: inline-block;
+    font-size: 2.3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}
+a {
+    color: darkred;
+}
+nav ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+}
+
+nav a {
+    text-decoration: none;
+    color: darkred;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #ececec; 
+}
+.grid-container {
+    display: grid;
+    gap: 20px;
+    width: 85%;
+    margin: 25px auto;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(78, 5, 5, 0.3);
+}
+
+.blog-post {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(66, 3, 3, 0.3);
+}
+
+h2 {
+    color: darkred;
+    border-bottom: 2px solid darkred;
+    margin-bottom: 15px;
+}
+
+p {
+color: #120b0b;
+font-size: 1rem;
+margin-bottom: 15px;
+
+}
+
+ul {
+    margin-left: 25px;
+}
+
+ol {
+ margin-left: 25px ;
+ list-style: none;
+ padding-left: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.6);
+    color: #f5f5f5
+}
+
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
