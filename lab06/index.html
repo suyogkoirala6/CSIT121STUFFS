@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accessibility Evaluation: NASA.gov</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url("images/space.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        color: #ffffff;
+        line-height: 1.7;
+    }
+
+    a {
+        color: #00eaff;
+    }
+
+    header, footer {
+        text-align: center;
+        padding: 20px;
+        background: rgba(0,0,0,0.85);
+
+    }
+
+    dl {
+  margin-top: 10px;
+    }
+    
+    dt {
+  font-weight: bold;
+  margin-top: 22px; 
+  margin-bottom: 6px;
+    }
+
+dd {
+  margin-left: 20px; 
+  margin-bottom: 14px; 
+  line-height: 1.6; 
+}
+
+
+    .skip-link {
+        position: absolute;
+        left: -999px;
+        top: auto;
+    }
+
+    .skip-link:focus {
+        left: 10px;
+        top: 10px;
+        background-color: #00eaff;
+        color: #000;
+        padding: 10px;
+        border-radius: 6px;
+        z-index: 1000;
+    }
+
+    .section-box {
+    background: rgba(0, 40, 90, 0.45);
+    border: 1px solid rgba(0, 180, 255, 0.6);
+    border-radius: 12px;
+    padding: 22px;
+    margin-bottom: 35px;
+    transition: 0.25s ease;
+    }
+    
+    .section-box:hover {
+    transform: scale(1.01);
+    border-color: #00eaff;
+    box-shadow: 0 0 12px rgba(0, 200, 255, 0.6);
+    }
+
+    nav {
+        background: rgba(0, 5, 32, 0.95);
+        padding: 15px;
+        text-align: center;
+    }
+
+    nav a {
+        text-decoration: none;
+        font-weight: bold;
+        margin: 0 15px;
+        font-size: 1.1rem;
+    }
+
+    nav a:focus, nav a:hover {
+        text-decoration: underline;
+    }
+
+    main {
+        background: rgba(0,0,0,0.75);
+        margin: 25px;
+        padding: 25px;
+        border-radius: 12px;
+    }
+
+    h1, h2 {
+        color: #00eaff;
+    }
+
+    hr {
+        margin: 30px 0;
+    }
+    figure {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    img {
+        max-width: 100%;
+        border: 2px solid #00eaff;
+        border-radius: 8px;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+</style>
+</head>
+
+<body>
+
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header>
+    <h1>Website Accessibility Evaluation: NASA.gov</h1>
+</header>
+
+<nav aria-label="Primary">
+    <a href="#site-info">Site Information</a>
+    <a href="#design-accessibility">Design & Accessibility</a>
+    <a href="#audit-results">Audit Results</a>
+    <a href="#screenshot">Screenshot</a>
+</nav>
+
+<main id="main-content">
+
+<section id="site-info" class="section-box">
+    <h2>Site Information</h2>
+
+    <dl>
+        <dt>1. What is the URL of the website?</dt>
+        <dd>The URL to NASA Website : <a href="https://www.nasa.gov" target="_blank">https://www.nasa.gov</a></dd>
+
+        <dt>2. What is the name of the website?</dt>
+        <dd>NASA : National Aeronautics and Space Administration</dd>
+
+        <dt>3. Who is the site's target audience?</dt>
+        <dd>NASA.gov is meant for a wide range of people. This includes students, teachers, scientists, and people working in aerospace, but also regular visitors who are just curious about space. 
+            Basically, anyone interested in space missions, new discoveries, or space education would find something valuable here.</dd>
+
+        <dt>4. How is the site organized?</dt>
+        <dd>The site is structured with a main menu at the top that includes sections like Missions,Return to the Moon, News & Events, Multimedia, and more. Many of the sections have dropdowns so you can quickly jump 
+            into specific topics. The homepage highlights big missions, live streams, and trending news, which makes it easy to spot what's currently happening at NASA. It feels organized and easy 
+            to explore without getting lost.</dd>
+
+    </dl>
+</section>
+
+<hr style="border: 2px solid #00eaff; box-shadow: 0 0 8px #00eaff;">
+
+<section id="design-accessibility" class="section-box">
+    <h2>User Experience & Accessibility Evaluation</h2>
+
+    <dl>
+        <dt>5. Which CRAP design principle does the site use? Provide an example.</dt>
+        <dd>
+            Contrast : NASA.gov mainly shows good use of Contrast. For example, the site uses white text on dark backgrounds and bright buttons for important links. This makes it easier to read and immediately tells 
+            your eyes where to focus. The contrast also helps people with low vision by making text and buttons stand out more clearly.
+        </dd>
+
+        <dt>6. What is the site's effectiveness?</dt>
+        <dd>The website is very effective at communicating NASA's mission and providing accurate space-related information. You can find mission updates, watch live rocket launches, explore space photos, and read official 
+            announcements. Everything feels reliable and educational, and it supports NASA's goal of informing the public about space exploration and science.</dd>
+
+        <dt>7. What is the site's efficiency?</dt>
+        <dd>
+            NASA.gov demonstrates strong efficiency in helping users find and interact with content. The site's search tool provides fast, relevant results, while clearly labeled navigation menus and well-organized 
+            categories for missions, media, news, and research support smooth browsing. Logical content grouping and large, easily clickable elements further streamline user tasks and reduce effort. However, efficiency 
+            may be slightly reduced for screen-reader users due to occasional missing accessible button labels and inconsistent heading structures, indicating room for improvement in accessibility-related usability.
+        </dd>
+
+        <dt>8. How is the engagement?</dt>
+        <dd>
+            Engagement on NASA.gov is exceptionally high, driven by its visually compelling space photography and video content, interactive learning tools, and detailed mission dashboards. Live broadcasts of launches and 
+            major events further draw users in, creating real-time excitement and participation. The site's modern layout and multimedia-rich storytelling help immerse visitors in NASA's missions and discoveries. Overall, 
+            the platform effectively maintains user interest and delivers an inspiring experience that aligns closely with NASA's mission and public identity.
+        </dd>
+
+    </dl>
+</section>
+
+<hr style="border: 2px solid #00eaff; box-shadow: 0 0 8px #00eaff;">
+
+<section id="audit-results" class="section-box">
+    <h2>Accessibility Audit Results</h2>
+
+    <dl>
+        <dt>9. What is the Audit Score according to the Accessibility Checker?</dt>
+        <dd>
+            65% : Not fully compliant. NASA.gov currently receives an accessibility audit score of 65%, placing it in a "Not Compliant" range. The evaluation identifies five critical issues and notes that three areas require 
+            manual review. Several elements lack proper accessibility names and landmark structure, which can hinder screen-reader navigation and inclusive use. With a score below 90%, the site may face potential usability 
+            challenges and legal exposure under accessibility standards such as ADA and Section 508.
+        </dd>
+
+        <dt>10. Recommendation for improvement</dt>
+        <dd>
+            To improve accessibility and enhance overall user experience, NASA.gov should implement several key adjustments. Adding accessible names to interactive buttons will ensure clearer screen-reader interpretation, 
+            while maintaining consistent level-one headings across pages will strengthen page hierarchy and orientation. Additionally, placing all content within proper semantic HTML landmarks will support smoother navigation 
+            for users relying on assistive technologies. These enhancements would significantly improve compliance with WCAG 2.2, ADA, and Section 508 standards, ensuring equitable access for users with visual or cognitive disabilities.
+        </dd>
+    </dl>
+</section>
+
+<hr style="border: 2px solid #00eaff; box-shadow: 0 0 8px #00eaff;">
+
+<section id="screenshot" class="section-box">
+    <h2>Audit Screenshot</h2>
+    <figure>
+        <img src="images/nasa-audit.png" alt="Accessibility audit screenshot for NASA.gov showing 65 percent score and critical WCAG issues">
+        <figcaption>Accessibility audit of NASA.gov using WCAG testing tool</figcaption>
+    </figure>
+</section>
+
+</main>
+
+<footer>
+    <p>CSIT-121 Web Accessibility Evaluation | Student Submission</p>
+</footer>
+
+</body>
+</html>
