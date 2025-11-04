@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dinosaurs Tier Survey</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="table" href="tierlist.html">
+    </head>
+
+<body>
+
+
+<div class="container">
+    <header>
+    <h1> Dinosaurs Survey & Contact</h1>
+      <nav>
+        <ul>
+            <li><a href="tierlist.html">Tier List</a></li>
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="contact.html">Contact Information</a></li>
+                                   
+        </ul>
+    </nav>
+    </header>
+</div>
+<main>
+    <form>
+    <label for="name">Your Name:</label>
+    <input id="name" name="name" type="text" required>
+    
+    <label for="email">Email Address:</label>
+    <input id="email" name="email" type="email" required>
+    <br><br>
+    
+    <label for="comments">What's your favorite dinosaurs?</label>
+    <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Write here..."></textarea>
+<br><br>
+
+<label for="tierSelect">Which tier do you think is best?</label>
+<select id="tierSelect" name="tierSelect">
+    <option>Please select</option>
+    <option>S Tier</option>
+    <option>A Tier</option>
+    <option>B Tier</option>
+    <option>C Tier</option>
+    <option>D Tier</option>
+</select>
+<br><br>
+<fieldset>
+    <legend>Do you prefer carnivores or herbivores?</legend>
+    <br>
+    <label><input type="radio" name="diet" value="carnivores"> Carnivores </label>
+    <label><input type="radio" name="diet" value="herbivores"> Herbivores </label>
+    <label><input type="radio" name="diet" value="both"> Both</label>
+</fieldset>
+<br>
+
+<br>
+<div class="checkbox-group">
+<label><input type="checkbox" name="jurassicParkFan"> I love Jurassic Park series.</label>
+<label><input type="checkbox" name="jurassicWorldFan"> I love Jurassic World series.</label>
+</div>
+<br>
+<br>
+    <button type="submit">Submit Dino Survey</button>
+</form>
+</main>
+<footer>
+        <p>&copy; 2025 Suyog Koirala - CSIT 121</p>
+    </footer>
+</body>
+</html>
