@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNG Example - Coffee Shop Vibes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Coffee Grind: Web Image Showcase</h1>
+           <span class="menu-icon" onclick="openNav()">&#9776; Menu</span>
+        </header>
+
+        <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="jpg.html">JPG Example</a>
+        <a href="png.html" class="current">PNG Example</a>
+        <a href="gif.html">GIF Example</a>
+      </div>
+    </div>
+
+
+        <main>
+            <h2>PNG Format Example</h2>
+            
+            <img src="images/logo.png" alt="Circular coffee shop logo with a steaming coffee cup in the center, surrounded by coffee beans and the text.">
+            
+            <section>
+                <h3>About This Image</h3>
+                <p>This image is a logo for a concept coffee shop called Coffee Grind. It shows a steaming coffee cup in the center
+                    with coffee beans and elegant text around it, all designed in warm brown tones to reflect a cozy and inviting coffee shop vibe.
+</p>
+            </section>
+            
+            <section>
+                <h3>Why PNG Format?</h3>
+                <p>PNG is the ideal format for this logo because it supports transparency. This allows the logo to sit cleanly on
+                   my background. PNG also uses lossless compression, which keeps the edges of the text and graphic sharp and crisp,
+                   which is essential for logos.</p>
+            </section>
+            
+            <div>
+                <p>Image source: Original photo by Suyog</p>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 Suyog Koirala - CSIT 121</p>
+        </footer>
+    </div>
+      <script>
+            function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+
+  </script>
+</body>
+</html>

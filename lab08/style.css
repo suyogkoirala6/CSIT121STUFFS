@@ -1,0 +1,128 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-image: url('images/background.jpg');
+    background-color: #e3d9ca; 
+    background-size: cover;      
+    background-attachment: fixed; 
+    background-position: center;
+}
+
+
+.container {
+    max-width: 900px;
+    margin: 40px auto; 
+    padding: 20px 40px;
+    background-color: rgba(255, 255, 255, 0.92); 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #856a5d;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+h1, h2, h3 {
+    color: #5d4037; 
+}
+
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: #5d4037;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+  transition: color 0.3s;
+}
+
+.menu-icon:hover {
+  color: #3e2723;
+}
+
+.overlay {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(87, 87, 69, 0.95);
+  overflow-x: hidden;
+  transition: 0.8s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+}
+
+.overlay a {
+  display: block;
+  text-decoration: none;
+  font-size: 36px;
+  color: #c7a27c;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.overlay a:hover {
+  color: #fff3e0;
+}
+
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #fff3e0;
+  text-decoration: none;
+}
+
+.closebtn:hover {
+  color: #c7a27c;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a { font-size: 20px; }
+  .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+
+main img {
+    max-width: 100%; 
+    height: auto;
+    display: block;
+    margin: 0 auto 25px auto; 
+    border: 3px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    font-size: 0.9em;
+    color: #666;
+}

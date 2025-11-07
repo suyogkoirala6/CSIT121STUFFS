@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPG Example - Coffee Shop Vibes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Coffee Grind: Web Image Showcase</h1>
+            <span class="menu-icon" onclick="openNav()">&#9776; Menu</span>
+        </header>
+        
+        <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="jpg.html" class="current">JPG Example</a>
+        <a href="png.html">PNG Example</a>
+        <a href="gif.html">GIF Example</a>
+      </div>
+    </div>
+
+        <main>
+            <h2>JPG Format Example</h2>
+            
+            <img src="images/latte-art.jpg" alt="A close-up of a latte in a white ceramic cup, with a delicate christmas tree pattern created in the milk foam. Plus, Coffee beans spilled aside the cup.">
+            
+            <section>
+                <h3>About This Image</h3>
+                <p>This is a photograph of a freshly made latte, featuring intricate art of christmas tree into the milk foam.
+                    The warm brown tones of the coffee contrast beautifully with the bright white cup and the creamy texture of the foam.</p>
+            </section>
+            
+            <section>
+                <h3>Why JPG Format?</h3>
+                <p>JPG format is the perfect choice for this photograph. It excels at compressing images with millions of colors and
+                    smooth gradients, like the subtle color transitions in the coffee and foam. This allows for a high-quality visual
+                    with a relatively small file size, making it ideal for web use.</p>
+            </section>
+            
+            <div>
+                <p>Image source: <a href="https://www.homecrux.com/christmas-tree-latte-art-the-perfect-topping-on-your-espresso-for-holidays/89839/" 
+                  target="_blank">HOMECRUX</a></p>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 Suyog Koirala - CSIT 121</p>
+        </footer>
+    </div>
+
+     <script>
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+  </script>
+  
+</body>
+</html>

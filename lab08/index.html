@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Coffee Shop Vibes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+   
+</head>
+
+<body>
+    <div class="container">
+        <header>
+        <h1>Coffee Grind: Web Image Showcase</h1>
+        <span class="menu-icon" onclick="openNav()">&#9776; Menu</span>
+    </header>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="jpg.html">JPG Example</a>
+        <a href="png.html">PNG Example</a>
+        <a href="gif.html">GIF Example</a>
+      </div>
+    </div>
+    <main>
+        <h2>Welcome to Showcase</h2>
+        <p>
+            This site explores common web image formats using A Coffee Shop Vibe theme.
+            Each page demonstrate a different format: JPG, PNG, and GIF. I will explain why 
+            that format is the best choice for the specific image being displayed.
+        </p>
+        <p>
+            From a rich, detailed photograph of latte art to a crisp logo with transparent background,
+            we will walkthrough how choosing the right image type is crucial for web design.
+            Click on the navigation links above to start exploring!
+        </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Suyog Koirala - CSIT 121</p>
+    </footer>
+    </div>
+
+<script>
+  function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+  }
+  function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+  }
+</script>
+</body>
+</html>
