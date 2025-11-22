@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>How is WCAG 2.1 used?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    
+    <nav aria-label="Main navigation">
+         <a href="index.html" >WCAG 2.1</a>
+        <a href="importance.html">Importance</a>
+        <a href="usage.html" aria-current="page">Usage</a>
+        <a href="sources.html">Sources</a>
+    </nav>
+
+<main>
+    <h1>How WCAG 2.1 Is Used?</h1>
+
+<p>
+    WCAG 2.1 is used as a practical guide for creating websites that everyone can access, including 
+    people with disabilities, mobile users, seniors, and even people with temporary limitations 
+    (like a broken arm or bright sunlight on their screen). Developers, designers, and organizations 
+    use these guidelines as a checklist during the planning, coding, and testing stages of a website. 
+    WCAG makes sure that content is easy to read, simple to navigate, and compatible with assistive 
+    technologies like screen readers.
+</p>
+
+<p>
+    Many schools, government websites, and large companies follow WCAG 2.1 to ensure their digital 
+    content meets accessibility standards. For students and beginners learning web development, WCAG 
+    helps build good habits early—such as using proper headings, writing descriptive alt text, 
+    choosing readable colors, and structuring HTML correctly. These practices not only help users 
+    with disabilities but also make websites cleaner, more professional, and easier for everyone to use.
+</p>
+<h2>Examples of How WCAG 2.1 is Applied</h2>
+ 
+<h3>A. Adding Alt Text to Images</h3>
+<p>
+    Alt text describes what an image shows. This is important for people using screen readers or 
+    when an image fails to load. Good alt text helps users understand the purpose of the image.
+</p>
+<pre>&lt;img src="logo.png" alt="Company Logo"&gt;</pre>
+
+<h3>B. Using Proper Heading Structure</h3>
+<p>
+    Headings must be used in order (H1, H2, H3, etc.) to give pages a clear hierarchy. This helps 
+    screen readers understand the layout and helps all users quickly scan the content.
+</p>
+<pre>
+&lt;h1&gt;Main Title&lt;/h1&gt;
+&lt;h2&gt;Section&lt;/h2&gt;
+&lt;h3&gt;Subsection&lt;/h3&gt;
+</pre>
+
+<h3> C. Providing Keyboard Navigation</h3>
+<p>
+    Some users cannot use a mouse, so WCAG requires that all interactive elements can be reached 
+    with keyboard keys like TAB, Enter, and the Arrow keys. Buttons, links, and forms should all 
+    be accessible without a mouse.
+</p>
+
+<h3>D. Ensuring Good Color Contrast</h3>
+<p>
+    Text needs enough contrast from its background so users can read it easily. WCAG recommends 
+    at least a 4.5:1 ratio for normal text. This is especially helpful for people with low vision 
+    or color blindness.
+</p>
+
+<h3>E. Adding Labels to Form Fields</h3>
+<p>
+    Labels help users understand what information they need to enter in a form, especially those 
+    using screen readers. Without labels, some users may not know what a text box is for.
+</p>
+<pre>
+&lt;label for="email"&gt;Email Address:&lt;/label&gt;
+&lt;input type="email" id="email" name="email"&gt;
+</pre>
+
+<h3>F. Using Descriptive Link Text</h3>
+<p>
+    Instead of writing “Click here,” WCAG recommends descriptive links so users know where the link 
+    will take them. This is especially useful for screen reader users.
+</p>
+<pre>&lt;a href="sources.html"&gt;Sources&lt;/a&gt;</pre>
+
+<h3>G. Making a Site Mobile-Friendly</h3>
+<p>
+    WCAG 2.1 added new guidelines for smartphones and tablets, such as making buttons large enough 
+    to tap and preventing the page from zoom-locking. This improves usability for all mobile users.
+</p>
+
+<h3>H. Providing Clear Instructions and Error Messages</h3>
+<p>
+    When users fill out a form incorrectly, WCAG requires helpful error messages so they know 
+    exactly how to fix the problem. This reduces frustration and prevents mistakes.
+</p>
+
+</main>
+<footer>
+    <p>&copy; 2025 WCAG Learning Project by Suyog</p>
+</footer>
+</div>
+</body>
+</html>
