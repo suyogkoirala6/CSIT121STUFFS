@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Encrypted Media Extensions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    
+    <nav aria-label="Main navigation">
+         <a href="index.html" >EME</a>
+        <a href="importance.html">Importance</a>
+        <a href="usage.html" aria-current="page">Usage</a>
+        <a href="sources.html">Sources</a>
+    </nav>
+
+<main>
+    <h1>How Is EME Used?</h1>
+    <img class="center-img" src="images/usage.png" alt="DRM system example">
+
+<p>
+   EME is used whenever a website needs to play encrypted or DRM-protected 
+   content through an HTML5 video player. Instead of exposing the raw video file, EME 
+   creates a secure communication path between the web browser, the streaming website, 
+   and the browser's Content Decryption Module (CDM). This process ensures the content 
+   can be viewed but not downloaded, copied, or screen-captured easily.
+</p>
+ 
+<h3>A. The Website Loads Encrypted Media Segments</h3>
+<p>
+    When a user presses "Play" button, the browser begins receiving video segments that 
+    are encrypted using standards like CENC (Common Encryption). These segments look like 
+    meaningless data until the browser receives the proper decryption keys.
+    <br>Without EME, the browser wouldn't know:</p>
+    <ul>
+        <li>how to request the keys</li>
+        <li>how to handle licensing rules</li>
+        <li>how to use the CDM</li>
+        <li>whether the user is authorized to play the content</li>
+    </ul>
+
+
+<h3>B. JavaScript Creates a MediaKeys Environment</h3>
+<p>
+    The streaming website uses JavaScript to:</p>
+    <ul>
+        <li>create a MediaKeys object</li>
+        <li>attach it to the &lt;video&gt; element</li>
+        <li>generate a license challenge (a key request)</li>
+    </ul>
+    <p>This step is where EME connects the webapge to the browser's DRM system.</p>
+
+
+
+<h3> C. A License Request Is Sent to the DRM Server</h3>
+<p>
+  The browser sends a message to the website's license server that includes:</p>
+  <ul>
+        <li>the user's device information (non-personal identifiers)</li>
+        <li>the content ID</li>
+        <li>supported key systems (e.g., Widevine, PlayReady, FairPlay)</li>
+        <li>the encryption scheme</li>
+    </ul>
+   <p> The license server then chcks if the user is allowed to watch the content.</p>
+
+
+<h3>D. The License Server Responds With a Decryption Key</h3>
+<p>
+    If the user is authorized (logged in, subscribed, in correct region), the 
+    server sends back a decryption license. This license includes:</p>
+    <ul>
+        <li>keys needed to decrypt the media</li>
+        <li>rights (HD, 4K, HDR, offline)</li>
+        <li>expiration time</li>
+        <li>restrictions (e.g., screenshot blocking)</li>
+    </ul>
+
+
+<h3>E. The CDM (Content Decryption Module) Decrypts the Media</h3>
+<p>
+    Once the browser receives the license, the CDM decrypts the video in memory.
+    The decrypted frames are immediately passed to the video renderer, the user never 
+    gains access to the raw video file. This protects content from:</p>
+
+    <ul>
+        <li>downloading</li>
+        <li>tampering</li>
+        <li>screen capture tools</li>
+        <li>codec modifications</li>
+    </ul>
+
+
+<h1>Real-World Examples of EME Usage</h1>
+<p>
+    Here are high-quality, industry-accurate examples of major platforms using EME.
+</p>
+
+<h3>Netflix</h3>
+<p>
+    Netflix is the most well-known use case for EME.</p>
+     <ul>
+        <li>uses EME to create a MediaKey session</li>
+        <li>requests a Widevine or PlayReady license</li>
+        <li>sends personalized restrictions (1080p or 4K depending on your device)</li>
+        <li>blocks downloading or screen capturing</li>
+    </ul>
+
+<h3>YouTube Premium Movies</h3>
+<p>
+    When a user rents or purchases a movie on YouTube, the platform uses Google Widevine 
+    DRM to protect the file. EME ensures:</p>
+     <ul>
+        <li>only authorized users play purchased movies</li>
+        <li>playback quality matches your device</li>
+        <li>certain movies can't be streamed in 4K on unsupported browsers</li>
+        <li>browser-based piracy tools can't extract the video file</li>
+    </ul>
+
+<h3>Disney+</h3>
+<p>
+    Disney+ uses EME with both Widevine and PlayReady depending on the device.
+    The system enforces: </p>
+     <ul>
+        <li>4K HDR support only on certain browsers (Chrome, Edge)</li>
+        <li>blocking playback on rooted or jailbroken devices</li>
+        <li>secure key exchange for new movie releases</li>
+    </ul>
+    
+
+
+</main>
+<footer>
+    <p>&copy; 2025 EME Learning Project by Suyog</p>
+</footer>
+</div>
+</body>
+</html>

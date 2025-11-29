@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Encrypted Media Extensions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    
+    <nav aria-label="Main navigation">
+        <a href="index.html" aria-current="page">EME</a>
+        <a href="importance.html">Importance</a>
+        <a href="usage.html">Usage</a>
+        <a href="sources.html">Sources</a>
+    </nav>
+<main>
+    <header>
+        <h1>What Is Encrypted Media Extensions (EME)?</h1>
+    </header>
+    <img class="center-img" src="images/what.png" alt="DRM system example">
+
+
+    <p>
+       The W3C web standard, Encrypted Media Extensions (EME) enables web applications to play encrypted audio and video through 
+       built-in browser capabilities through its official JavaScript API. The W3C published EME as a Recommendation on September 18th, 2017, 
+       before releasing subsequent updates through the Editor's Draft in 2019. The standard replaced previous browser plugins including 
+       Adobe Flash and Microsoft Silverlight and NPAPI-based playback systems which used to play DRM-protected media content.
+    </p>
+
+    <p>
+        The EME system enables secure content playback through native browser integration with HTML5 &lt;video&gt; and &lt;audio&gt; elements. 
+        The EME system does not determine which encryption methods to use or which DRM systems to implement or digital licenses to apply. 
+        The browser uses EME to establish communication with a Content Decryption Module (CDM) which handles both decryption operations and 
+        content playback restrictions defined by content providers. The following list shows examples of Content Decryption Modules (CDMs):
+    </p>
+    <ul>
+        <li>Google Widevine (Chrome, Android, Firefox)</li>
+        <li>Microsoft PlayReady (Edge, Windows)</li>
+        <li>Apple FairPlay (Safari, iOS, macOS)</li>
+    </ul>
+
+    <p>
+        EME functions as a common interface which enables video websites to connect with the browser-based DRM system through its separate operation. 
+        The system gives developers a standardized method to obtain keys and manage decryption licenses and manage playback restrictions and control 
+        encrypted media sessions. The system enables protected content playback through secure devices while maintaining copyright protection.
+    </p>
+
+    
+</main>
+<footer>
+    <p>&copy; 2025 EME Learning Project by Suyog</p>
+</footer>
+
+</div>
+</body>
+</html>
